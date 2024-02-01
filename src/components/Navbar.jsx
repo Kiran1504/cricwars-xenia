@@ -1,13 +1,10 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Form, InputGroup, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [show, setShow] = useState(false);
     const [showInstructions, setShowInstructions] = useState(false);
-    const [showSignupLogin, setShowSignupLogin] = useState(false);
-    const [loginModal, setLoginModal] = useState(true);
 
     //navbar contents
     const navItems = [
@@ -68,121 +65,69 @@ const Navbar = () => {
             {/* instructions modal */}
 
 
-            <Modal
-                show={showInstructions}
-                onHide={() => setShowInstructions(false)}>
-                <Modal.Header closeButton>
-                    <Modal.Title className="modal_title">Instructions</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>Woohoo, youre reading this text in a modal!</Modal.Body>
-                <Modal.Footer>
-                    <button className="bg-blue-500 text-black p-1 px-3 rounded-xl my-4 font-semibold text-lg" onClick={() => setShowInstructions(false)}>
-                        Close
-                    </button>
-                </Modal.Footer>
-            </Modal>
+            <div className={` w-[100%] ${showInstructions ? "inline" : "hidden"} absolute top-[12%] `}>
+                <div className="h-[40rem] overflow-y-scroll justify-center items-center w-[50%] mx-auto bg-[#eee] rounded-2xl px-10">
+
+                    <div className="modal_title mt-5 text-black">
+                        <h1>Instructions</h1>
+                    </div>
+                    <div className="mb-5 p-4 text-black ">
+                        <h1 className="font-bold text-xl my-7">Auction Details</h1>
+
+                        <ul className="list-disc">
+                            <li>10 teams will enter the Auction.</li>
+                            <li>The venue of the Auction will be conveyed beforehand.</li>
+                            <li>Each team will be allotted a budget of 90 Crores to buy various players in the Auction.</li>
+                            <li>There will be a grand pool of 180 players who will be auctioned.</li>
+                            <li>Each player will enter the auction with an initial base price.</li>
+                            <li>Bidding will start, and there are no restrictions on the value to which a player can go in the auction.</li>
+                            <li>Players will be categorized into sets, and there will be a 5-minute break after the completion of each set.</li>
+                            <li>The player being auctioned at the moment will be displayed to all the teams accordingly.</li>
+                            <li>If a player fetches no bids, he goes unsold and may only return to a rebid after the completion of all sets.</li>
+                            <li>2 Right To Match Cards (RTMs) allotted to each team to match the final bid of a player.</li>
+                            <li>After the Auction, if any team fails to meet the squad constraints, the team will be disqualified.</li>
+                            <li>A team must conclude with a squad of at least 13 and at most 17 players.</li>
+                            <li>Playing 11 constraints: Batsmen (3-6), Bowlers (3-6), Wicketkeepers (1-3), Allrounders (1-3).</li>
+                            <li>Overseas Players: 3 or 4 are mandatory in the playing 11; Maximum 6 in the squad.</li>
+                            <li>Uncapped Players: At least 1 in playing 11.</li>
+                            <li>Legends: At most 1 in the squad.</li>
+                        </ul>
+
+                        <h2 className="font-bold text-xl my-7">Team Formation</h2>
+
+                        <ul className="list-disc">
+                            <li>Qualifying participants need to form a team of 3 members.</li>
+                            <li>Team members cannot be any of the other qualified participants.</li>
+                            <li>Team members should have participated in Round 1.</li>
+                            <li>Submit your team to the event coordinators before the deadline.</li>
+                            <li>Teams get to select their bidding franchise based on the leaderboard of Round 2.</li>
+                            <li>The bidding franchise chosen is vital for getting RTMs for a player who plays for that franchise.</li>
+                        </ul>
+
+                        <h2 className="font-bold text-lg my-7">Points System</h2>
+
+                        <ul className="list-disc">
+                            <li>Each player in the Auction pool will have a rating out of 10.</li>
+                            <li>Teams submit Playing 11 with Captain and Vice-Captain after the Auction.</li>
+                            <li>Playing 11 should follow squad constraints to avoid disqualification.</li>
+                            <li>Captain and Vice-Captain tags act as score multipliers (2x and 1.5x, respectively).</li>
+                            <li>Final scores are calculated by aggregating ratings (with multipliers) of all players in the Playing 11.</li>
+                            <li>The top 3 teams with the highest aggregate ratings will be crowned the Winners of the Auction and CricWars.</li>
+                        </ul>
+                    </div>
+                    <div className="my-5 text-center">
+                        <button
+                            className="bg-gray-500 text-black p-2 px-5 rounded-xl m-4 mt-2 mb-0 font-medium text-lg"
+                            onClick={() => setShowInstructions(false)}>
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
 
 
 
-            {/* signup/Login modal */}
 
-            <Modal show={showSignupLogin} onHide={() => setShowSignupLogin(false)} className="">
-                {
-                    loginModal ?
-                        (
-                            <>
-                                <Modal.Header closeButton>
-                                    <Modal.Title className="modal_title">Login</Modal.Title>
-                                </Modal.Header>
-                                <Modal.Body>
-                                    <InputGroup className="mb-3">
-                                        <InputGroup.Text id="basic-addon1" className="label">Email</InputGroup.Text>
-                                        <Form.Control className="inputbox"
-                                            placeholder="useremail@example.com"
-                                            aria-label="email"
-                                            aria-describedby="basic-addon1"
-                                        />
-                                    </InputGroup>
-
-                                    <InputGroup className="mb-3">
-                                        <InputGroup.Text id="basic-addon2" className="label">Password</InputGroup.Text>
-                                        <Form.Control className="inputbox"
-                                            placeholder="Password"
-                                            aria-label="Password"
-                                            aria-describedby="basic-addon2"
-                                        />
-                                    </InputGroup>
-                                </Modal.Body>
-                                <Modal.Footer>
-                                    <button
-                                        className="bg-blue-500 text-black p-1 px-3 rounded-xl my-4 font-semibold text-lg"
-                                    >
-                                        Login
-                                    </button>
-                                    <button
-                                        className="bg-gray-500 text-black p-1 px-3 rounded-xl mx-2 my-4 font-semibold text-lg"
-                                        onClick={() => setShowSignupLogin(false)}
-                                    >
-                                        Close
-                                    </button>
-                                    <p className="text-sm">don&apos;t have a account {" "}
-                                        <span
-                                            className="underline text-blue-500"
-                                            onClick={() => setLoginModal(false)}
-                                        >
-                                            click here
-                                        </span>
-                                    </p>
-                                </Modal.Footer>
-                            </>
-                        ) : (
-                            <>
-                                <Modal.Header closeButton>
-                                    <Modal.Title className="modal_title">Signup</Modal.Title>
-                                </Modal.Header>
-                                <Modal.Body>
-                                    <InputGroup className="mb-3">
-                                        <InputGroup.Text id="basic-addon1" className="label">Email</InputGroup.Text>
-                                        <Form.Control className="inputbox"
-                                            placeholder="useremail@example.com"
-                                            aria-label="email"
-                                            aria-describedby="basic-addon1"
-                                        />
-                                    </InputGroup>
-
-                                    <InputGroup className="mb-3">
-                                        <InputGroup.Text id="basic-addon2" className="label">Password</InputGroup.Text>
-                                        <Form.Control className="inputbox"
-                                            placeholder="Password"
-                                            aria-label="Password"
-                                            aria-describedby="basic-addon2"
-                                        />
-                                    </InputGroup>
-                                </Modal.Body>
-                                <Modal.Footer>
-                                    <button className="bg-blue-500 text-black p-1 px-3 rounded-xl my-4 font-semibold text-lg">
-                                        Signup
-                                    </button>
-
-                                    <button
-                                        className="bg-gray-500 text-black p-1 px-3 rounded-xl mx-2 my-4 font-semibold text-lg"
-                                        onClick={() => setShowSignupLogin(false)}
-                                    >
-                                        Close
-                                    </button>
-                                    <p className="text-sm">already have a account {" "}
-                                        <span
-                                            className="underline text-blue-500"
-                                            onClick={() => setLoginModal(true)}
-                                        >
-                                            click here
-                                        </span>
-                                    </p>
-                                </Modal.Footer>
-                            </>
-                        )
-                }
-            </Modal>
         </>
     )
 }
