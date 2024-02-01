@@ -46,7 +46,7 @@ const Auction = () => {
             setPlayersList(storedPlayers);
             const unauctioned = storedPlayers.filter((player) => player.status === 'unauctioned');
             const unsold = storedPlayers.filter((player) => player.status === 'unsold');
-            console.log(storedPlayers);
+            // console.log(storedPlayers);
             setUnAuctionedPlayers(unauctioned);
             setUnsoldPlayers(unsold);
             setLoading(true);
@@ -55,7 +55,7 @@ const Auction = () => {
             setPlayersList(players);
             const unauctioned = players.filter((player) => player.status === 'unauctioned');
             const unsold = players.filter((player) => player.status === 'unsold');
-            console.log(players);
+            // console.log(players);
             setUnAuctionedPlayers(unauctioned);
             setUnsoldPlayers(unsold);
             setLoading(true);
@@ -113,56 +113,87 @@ const Auction = () => {
         localStorage.setItem('players', JSON.stringify(sortedPlayers));
     };
 
+    const [password, setPassword] = useState('');
+    const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
+
+    const handlePasswordChange = (event) => {
+        setPassword(event.target.value);
+    };
+
+    const handleCheckPassword = () => {
+        // Replace 'yourCorrectPassword' with your actual correct password
+        const correctPassword = 'Ayushisadminofcricwarswebsite2024';
+
+        if (password === correctPassword) {
+            setIsPasswordCorrect(true);
+        } else {
+            setIsPasswordCorrect(false);
+            alert("Wrong Pass")
+        }
+    };
+
     return loading && (
         <>
-            <PlayerSearch handle={searchPlayerHandler} players={playersList} />
-            <div>
-                <div className="my-5 p-4 w-full text-center font-semibold text-4xl">
-                    <h1>Auction</h1>
-                </div>
-                <div className="flex gap-4 justify-evenly items-center">
-                    <div className="w-[65%]">
-                        <div className="flex gap-2 flex-wrap">
-                            <div className="w-[40%]">
-                                {/* <img src={imgsrc} alt="image" className="w-[75%] my-3 mx-auto" /> */}
-                                <img src={virat} alt="image" className="my-3 mx-4 w-[90%] border-2 rounded-2xl" />
-                                <p className="my-6 mx-4 p-2 bg-[#1d1d1d] border-2 rounded-xl text-3xl text-center">{playersList[index].name}</p>
-                            </div>
-                            <div className={`w-[40%]`}>
-                                <div className="text-white text-lg p-4">
-                                    <p className="my-6 border-2 p-4 rounded-xl">Base Price: {playersList[index].basePrice}</p>
-                                    {/* <p className="my-6 border-2 p-4 rounded-xl">Buy Price: {playersList[index].buy_price ? playersList[index].buy_price : "25 Cr"}</p> */}
-                                    <p className="my-6 border-2 p-4 rounded-xl">Rating: {playersList[index].rating}</p>
-                                    <p className="my-6 border-2 p-4 rounded-xl">Role: {playersList[index].role}</p>
-                                    {/* <p className="my-1 shadow-sm shadow-white px-1 rounded-lg">Team: </p> */}
+            {!isPasswordCorrect ?
+                <div className="w-full text-center">
+                    <label className=" flex justify-center gap-4 py-4 text-lg">
+                        Enter Password:
+                        <input type="password" value={password} onChange={handlePasswordChange} className="text-black text-sm" />
+                    </label>
+                    <button onClick={handleCheckPassword} className="mx-auto my-4 text-black px-4 py-2 bg-green-400 rounded-lg">Submit</button>
+                </div >
+                :
+                <>
+                    <PlayerSearch handle={searchPlayerHandler} players={playersList} />
+                    <div>
+                        <div className="my-5 p-4 w-full text-center font-semibold text-4xl">
+                            <h1>Auction</h1>
+                        </div>
+                        <div className="flex gap-4 justify-evenly items-center">
+                            <div className="w-[65%]">
+                                <div className="flex gap-2 flex-wrap">
+                                    <div className="w-[40%]">
+                                        {/* <img src={imgsrc} alt="image" className="w-[75%] my-3 mx-auto" /> */}
+                                        <img src={virat} alt="image" className="my-3 mx-4 w-[90%] border-2 rounded-2xl" />
+                                        <p className="my-6 mx-4 p-2 bg-[#1d1d1d] border-2 rounded-xl text-3xl text-center">{playersList[index].name}</p>
+                                    </div>
+                                    <div className={`w-[40%]`}>
+                                        <div className="text-white text-lg p-4">
+                                            <p className="my-6 border-2 p-4 rounded-xl">Base Price: {playersList[index].basePrice}</p>
+                                            {/* <p className="my-6 border-2 p-4 rounded-xl">Buy Price: {playersList[index].buy_price ? playersList[index].buy_price : "25 Cr"}</p> */}
+                                            <p className="my-6 border-2 p-4 rounded-xl">Rating: {playersList[index].rating}</p>
+                                            <p className="my-6 border-2 p-4 rounded-xl">Role: {playersList[index].role}</p>
+                                            {/* <p className="my-1 shadow-sm shadow-white px-1 rounded-lg">Team: </p> */}
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
+
+
+
+                            <div className="w-[30%] bg-slate-200 text-black rounded-xl text-center pt-8">
+
+                                <div className="my-5 w-full text-center">
+                                    <button type="submit"
+                                        className="bg-green-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg"
+                                        onClick={playerSold}>
+                                        Sold
+                                    </button>
+                                    <button type="submit"
+                                        className="bg-red-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg"
+                                        onClick={playerUnSold}>
+                                        Unsold
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-
-
-
-                    <div className="w-[30%] bg-slate-200 text-black rounded-xl text-center pt-8">
-
-                        <div className="my-5 w-full text-center">
-                            <button type="submit"
-                                className="bg-green-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg"
-                                onClick={playerSold}>
-                                Sold
-                            </button>
-                            <button type="submit"
-                                className="bg-red-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg"
-                                onClick={playerUnSold}>
-                                Unsold
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div >
-
+                    </div >
+                </>
+            }
         </>
+
     )
 }
 
