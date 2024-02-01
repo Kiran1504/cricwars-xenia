@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Form, InputGroup, Modal } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [show, setShow] = useState(false);
@@ -22,18 +23,7 @@ const Navbar = () => {
                 setShow(false);
             }
         },
-        {
-            name: 'Leaderboard',
-            link: '/leaderboard'
-        },
-        {
-            name: 'signup/login',
-            // link: '/'
-            onClick: () => {
-                setShowSignupLogin(!showSignupLogin);
-                setShow(false);
-            }
-        },
+
     ]
 
 
@@ -48,18 +38,18 @@ const Navbar = () => {
                         <h1 className='text-center font-semibold text-2xl sm:text-3xl'>CRICWARS</h1>
                     </div>
                 </div>
-                <div className="pr-4 z-10 bg-[#242424] min-h-max">
+                <div className="pr-4 z-10  min-h-max">
                     <ul className={`{hidden sm:flex ${show ? "flex flex-col " : "hidden"} justify-center gap-4}`}>
                         {navItems.map((item, i) => (
 
                             item.link ?
-                                (<a key={i} href={`${item.link}`} className='text-white'>
+                                (<Link key={i} to={`${item.link}`} className='text-white'>
                                     <li
                                         className="hover:bg-blue-500 hover:text-white rounded-3xl p-2 px-4"
                                         onClick={item.onClick}>
                                         {item.name}
                                     </li>
-                                </a>)
+                                </Link>)
                                 :
                                 (<li
                                     className="hover:bg-blue-500 rounded-3xl p-2 px-4"

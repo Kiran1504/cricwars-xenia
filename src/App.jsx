@@ -3,6 +3,9 @@ import './App.css'
 import Navbar from './components/Navbar'
 import TeamInfo from './pages/TeamInfo'
 import AdminPanel from './pages/AdminPanel'
+import Auction from './pages/Auction'
+import SearchedPlayer from './components/SearchedPlayer'
+import Home from './pages/Home'
 
 function App() {
 
@@ -10,8 +13,11 @@ function App() {
     <>
       <div><Navbar /></div>
       <Routes>
-        <Route path="/" Component={TeamInfo} />
+        <Route path='/' Component={Home} />
+        <Route path="/:teamInitials" Component={TeamInfo} />
         <Route path='/user/admin' Component={AdminPanel} />
+        <Route path='auction' Component={Auction} />
+        <Route path='auction/:searchedplayer' Component={SearchedPlayer} />
       </Routes>
     </>
   )

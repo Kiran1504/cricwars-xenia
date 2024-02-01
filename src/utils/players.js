@@ -1,68 +1,114 @@
 export const players = [
     {
-        "name": "Virat Kohli",
-        "image": "virat_kohli.jpg",
-        "buy_price": "2500",
-        "rating": 9.5
+        "id": 1,
+        "name": "Rahul Tripathi",
+        "Base Price": "1.5cr",
+        "Rating": 8.5,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
     },
     {
-        "name": "Steve Smith",
-        "image": "steve_smith.jpg",
-        "buy_price": "1800",
-        "rating": 9.0
+        "id": 2,
+        "name": "Prithvi Shaw",
+        "Base Price": "1cr",
+        "Rating": 8.25,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
     },
     {
-        "name": "Kane Williamson",
-        "image": "kane_williamson.jpg",
-        "buy_price": "1700",
-        "rating": 8.8
+        "id": 3,
+        "name": "Manish Pandey",
+        "Base Price": "1cr",
+        "Rating": 8,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
     },
     {
-        "name": "Rohit Sharma",
-        "image": "rohit_sharma.jpg",
-        "buy_price": "2200",
-        "rating": 9.2
+        "id": 4,
+        "name": "Shreyas Iyer",
+        "Base Price": "1.5cr",
+        "Rating": 8.75,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
     },
     {
-        "name": "Joe Root",
-        "image": "joe_root.jpg",
-        "buy_price": "1500",
-        "rating": 8.7
+        "id": 5,
+        "name": "Yashashvi Jaiswal",
+        "Base Price": "1.5Cr",
+        "Rating": 8.5,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
     },
     {
-        "name": "Babar Azam",
-        "image": "babar_azam.jpg",
-        "buy_price": "1900",
-        "rating": 9.1
+        "id": 6,
+        "name": "Tilak Verma",
+        "Base Price": "75L",
+        "Rating": 8.25,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
     },
     {
-        "name": "David Warner",
-        "image": "david_warner.jpg",
-        "buy_price": "2000",
-        "rating": 9.3
+        "id": 7,
+        "name": "Shubman Gill",
+        "Base Price": "2cr",
+        "Rating": 9,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
     },
     {
-        "name": "Quinton de Kock",
-        "image": "quinton_de_kock.jpg",
-        "buy_price": "1600",
-        "rating": 8.9
+        "id": 8,
+        "name": "Ajinkya Rahane",
+        "Base Price": "75L",
+        "Rating": 7.5,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
     },
     {
-        "name": "Jasprit Bumrah",
-        "image": "jasprit_bumrah.jpg",
-        "buy_price": "2300",
-        "rating": 9.4
+        "id": 9,
+        "name": "Mayank Agarwal",
+        "Base Price": "1cr",
+        "Rating": 7.75,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
     },
     {
-        "name": "Rashid Khan",
-        "image": "rashid_khan.jpg",
-        "buy_price": "15.00",
-        "rating": 8.5
+        "id": 10,
+        "name": "Ruturaj Gaikwad",
+        "Base Price": "1.5Cr",
+        "Rating": 9,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
     },
     {
-        "name": "Ben Stokes",
-        "image": "ben_stokes.jpg",
-        "buy_price": "2100",
-        "rating": 9.0
+        "id": 11,
+        "name": "Devdutt Padikkal",
+        "Base Price": "75L",
+        "Rating": 8,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
+    },
+    {
+        "id": 12,
+        "name": "Nitish Rana",
+        "Base Price": "50L",
+        "Rating": 8,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
+    },
+    {
+        "id": 13,
+        "name": "Rinku Singh",
+        "Base Price": "1.5Cr",
+        "Rating": 8.5,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
+    },
+    {
+        "id": 14,
+        "name": "Sai Sudharsan",
+        "Base Price": "50L",
+        "Rating": 7.5,
+        "role": "INDIAN CAPPED BATSMAN",
+        "status": "unauctioned"
     }
 ]
