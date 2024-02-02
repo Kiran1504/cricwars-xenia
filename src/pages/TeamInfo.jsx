@@ -151,8 +151,8 @@ const TeamInfo = () => {
                 className="border-b-2 sm:w-[50%] m-auto border-white p-2 my-3 sm:my-4 rounded-xl grid grid-cols-8 sm:grid-cols-10 gap-4 items-center">
                 <img src={img} alt="image" className="w-16 rounded-full col-start-1 col-span-2" />
                 <h1 className="text-base sm:text-xl font-medium sm:font-semibold col-start-1 sm:col-start-3 col-span-4 sm:col-span-3">Player Name</h1>
-                <p className="col-start-6 text-base sm:text-xl font-medium sm:font-semibold">Rating</p>
-                <p className="col-start-8 col-span-3 text-base sm:text-xl font-medium sm:font-semibold">Price</p>
+                <p className="col-start-7 text-base sm:text-xl font-medium sm:font-semibold">Rating</p>
+                <p className="col-start-9 col-span-3 text-base sm:text-xl font-medium sm:font-semibold">Price</p>
             </div>
 
 
