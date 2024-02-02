@@ -18,8 +18,8 @@ function App() {
         <Route path="/:teamInitials" Component={TeamInfo} />
         <Route path='/teams' Component={AllTeams} />
         <Route path='/user/admin' Component={AdminPanel} />
-        <Route path='auction' Component={Auction} />
-        <Route path='auction/:searchedplayer' Component={SearchedPlayer} />
+        <Route path='/auction' Component={Auction} />
+        <Route path='/auction/:searchedplayer' Component={SearchedPlayer} />
       </Routes>
     </>
   )
