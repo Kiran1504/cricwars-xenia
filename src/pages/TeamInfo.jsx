@@ -164,8 +164,8 @@ const TeamInfo = () => {
                         className="border-b-2 border-zinc-800 p-2 my-3 sm:my-4 rounded-xl grid grid-cols-8 sm:grid-cols-10 gap-4 items-center sm:hover:-translate-y-3 shadow-md shadow-gray-600 ">
                         <img src={player.img} alt="image" className="w-16 rounded-full col-start-1 col-span-2" />
                         <h1 className="text-base sm:text-xl font-medium sm:font-semibold col-start-3 col-span-4">{player.name}</h1>
-                        <p className="col-start-7">{player.rating}</p>
-                        <p className="col-start-8 col-span-3 text-sm">&#8377;{`${player.price} Cr`}</p>
+                        <p className="col-start-7 textcenter">{player.rating}</p>
+                        <p className="col-start-9 col-span-3 text-sm">&#8377;{`${player.price} Cr`}</p>
                     </div>
                 )}
             </div>
