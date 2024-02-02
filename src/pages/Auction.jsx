@@ -80,7 +80,7 @@ const Auction = () => {
 
     const playerSold = async (e) => {
         e.preventDefault();
-        if (!disableSold) {
+        if (disableSold) {
             return
         }
         else {
@@ -253,6 +253,7 @@ const Auction = () => {
 
                                     <div className="my-5 w-full text-center">
                                         <button type="submit"
+                                            // onClick={() => setDisableSold(true)}
                                             className={`${disableSold ? "bg-gray-500" : "bg-green-500"} text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg`}>
                                             Sold
                                         </button>

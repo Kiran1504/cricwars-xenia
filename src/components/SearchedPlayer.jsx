@@ -16,6 +16,8 @@ const SearchedPlayer = () => {
     const [playersList, setPlayersList] = useState();
     const [isAdmin, setIsAdmin] = useState(false);
 
+    const [disableSold, setDisableSold] = useState(false);
+
     useEffect(() => {
         const storedPlayers = JSON.parse(localStorage.getItem('players'));
         const isAdmin = localStorage.getItem("isAdmin");
@@ -36,6 +38,13 @@ const SearchedPlayer = () => {
 
     const playerSold = async (e) => {
         e.preventDefault();
+        if (disableSold) return;
+        else {
+            setDisableSold(true);
+            setTimeout(() => {
+                setDisableSold(false);
+            }, 10000);
+        }
         const updatedPlayers = playersList.map((player) =>
             player.id === Number(searchedplayer) ? { ...player, status: 'sold' } : player
         );
@@ -162,13 +171,13 @@ const SearchedPlayer = () => {
                         <div className="my-5 w-full text-center">
                             <input type="submit" value={`Submit`}
                                 onClick={playerSold}
-                                className="bg-green-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg" />
+                                className={`${disableSold ? "bg-gray-500" : "bg-green-500"} text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg`}>
 
-                            <button
-                                className="bg-red-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg"
-                                onClick={playerUnSold}>
-                                Unsold
-                            </button>
+                                <button
+                                    className="bg-red-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg"
+                                    onClick={playerUnSold}>
+                                    Unsold
+                                </button>
                         </div>
                         {/* </form> */}
                     </div>
