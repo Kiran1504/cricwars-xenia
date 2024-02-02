@@ -124,6 +124,7 @@ const SearchedPlayer = () => {
                                     {/* <p className="my-6 border-2 p-4 rounded-xl">Buy Price: {player[0].buy_price ? player[0].buy_price : "25 Cr"}</p> */}
                                     <p className="my-6 border-2 p-4 rounded-xl">Rating: {player[0].rating}</p>
                                     <p className="my-6 border-2 p-4 rounded-xl">Role: {player[0].role}</p>
+                                    <p className="my-6 border-2 p-4 rounded-xl">Previous Team: {player[0].previousTeam}</p>
                                     {/* <p className="my-1 shadow-sm shadow-white px-1 rounded-lg">Team: </p> */}
                                 </div>
                             </div>

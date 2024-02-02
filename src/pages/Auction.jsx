@@ -207,6 +207,7 @@ const Auction = () => {
                                             {/* <p className="my-6 border-2 p-4 rounded-xl">Buy Price: {playersList[index].buy_price ? playersList[index].buy_price : "25 Cr"}</p> */}
                                             <p className="my-6 border-2 p-4 rounded-xl">Rating: {playersList[index].rating}</p>
                                             <p className="my-6 border-2 p-4 rounded-xl">Role: {playersList[index].role}</p>
+                                            <p className="my-6 border-2 p-4 rounded-xl">Previous Team: {playersList[index].previousTeam}</p>
                                             {/* <p className="my-1 shadow-sm shadow-white px-1 rounded-lg">Team: </p> */}
                                         </div>
                                     </div>

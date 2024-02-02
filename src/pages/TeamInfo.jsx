@@ -16,6 +16,7 @@ const TeamInfo = () => {
     useEffect(() => {
         ; (async function () {
             const res = await fetch("https://cricwarsbackend.onrender.com/getdb", {
+                // const res = await fetch("http://localhost:5000/getdb", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -24,47 +25,38 @@ const TeamInfo = () => {
             })
             const data = await res.json()
             if (data) {
+                const temp = data.filter((team) => team.teamName === teamInitials)
+                setPlayers(temp[0].players)
                 if (teamInitials === "rcb") {
-                    setPlayers(data.rcb)
                     setImg(teamslogo.rcb)
                 }
                 if (teamInitials === "csk") {
-                    setPlayers(data.csk)
                     setImg(teamslogo.csk)
                 }
                 if (teamInitials === "mi") {
-                    setPlayers(data.mi)
                     setImg(teamslogo.mi)
                 }
                 if (teamInitials === "rr") {
-                    setPlayers(data.rr)
                     setImg(teamslogo.rr)
                 }
                 if (teamInitials === "lsg") {
-                    setPlayers(data.lsg)
                     setImg(teamslogo.lsg)
                 }
                 if (teamInitials === "gt") {
-                    setPlayers(data.gt)
                     setImg(teamslogo.gt)
                 }
                 if (teamInitials === "pbks") {
-                    setPlayers(data.pbks)
                     setImg(teamslogo.pbks)
                 }
                 if (teamInitials === "kkr") {
-                    setPlayers(data.kkr)
                     setImg(teamslogo.kkr)
                 }
                 if (teamInitials === "srh") {
-                    setPlayers(data.srh)
                     setImg(teamslogo.srh)
                 }
                 if (teamInitials === "dc") {
-                    setPlayers(data.dc)
                     setImg(teamslogo.dc)
                 }
-
             }
 
 
