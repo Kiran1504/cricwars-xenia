@@ -11,6 +11,9 @@ import PlayerSearch from "../components/PlayerSearch";
 
 const Auction = () => {
 
+    const [soldPrice, setSoldPrice] = useState("");
+    const [soldTo, setSoldTo] = useState("");
+
     const [searchedPlayer, setSearchedPlayer] = useState({});
     const searchPlayerHandler = (player) => {
         setSearchedPlayer(player);
@@ -40,8 +43,18 @@ const Auction = () => {
     const [unAuctionedPlayers, setUnAuctionedPlayers] = useState([]);
     const [unsoldPlayers, setUnsoldPlayers] = useState([]);
 
+    const [password, setPassword] = useState('');
+    const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
+
+
+
     useEffect(() => {
         const storedPlayers = JSON.parse(localStorage.getItem('players'));
+        const isAdmin = localStorage.getItem("isAdmin");
+        console.log(isAdmin);
+        if (isAdmin == "true") {
+            setIsPasswordCorrect(true)
+        }
         if (storedPlayers) {
             setPlayersList(storedPlayers);
             const unauctioned = storedPlayers.filter((player) => player.status === 'unauctioned');
@@ -64,21 +77,50 @@ const Auction = () => {
     const batsman = players.filter(player => (player.role === "Batsman" && player.status === "unauctioned"));
 
 
-    const playerSold = () => {
+    const playerSold = async (e) => {
+        e.preventDefault();
         if (index === playersList.length - 1) {
             alert("All players are sold");
             return;
         }
-
+        const soldPlayer = playersList[index];
+        if (soldPlayer.basePrice > soldPrice) {
+            alert("Sold price should be greater than base price")
+            return;
+        }
+        const res = await fetch("http://localhost:5000/updatedb", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                img: soldPlayer.img,
+                id: soldPlayer.id,
+                name: soldPlayer.name,
+                rating: soldPlayer.rating,
+                price: soldPrice,
+                soldTo: soldTo,
+            }),
+            credentials: "include",
+        })
+        const data = await res.json();
+        // console.log(data);
+        if (!data.message) {
+            alert("Wrong input")
+            return;
+        }
         const updatedPlayers = playersList.map((player) =>
             player.id === playersList[index].id ? { ...player, status: 'sold' } : player
         );
+        // console.log(soldPlayer);
 
         // Update local storage and state with the updated players list
         // localStorage.setItem('players', JSON.stringify(updatedPlayers));
         updateLocalStorage(updatedPlayers);
         setPlayersList(updatedPlayers);
         setIndex(index + 1);
+        setSoldPrice("");
+        setSoldTo("");
     };
 
     const playerUnSold = () => {
@@ -113,19 +155,19 @@ const Auction = () => {
         localStorage.setItem('players', JSON.stringify(sortedPlayers));
     };
 
-    const [password, setPassword] = useState('');
-    const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
 
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
     };
 
-    const handleCheckPassword = () => {
+    const handleCheckPassword = (event) => {
+        event.preventDefault();
         // Replace 'yourCorrectPassword' with your actual correct password
         const correctPassword = 'Ayushisadminofcricwarswebsite2024';
 
         if (password === correctPassword) {
             setIsPasswordCorrect(true);
+            localStorage.setItem("isAdmin", "true")
         } else {
             setIsPasswordCorrect(false);
             alert("Wrong Pass")
@@ -136,11 +178,13 @@ const Auction = () => {
         <>
             {!isPasswordCorrect ?
                 <div className="w-full text-center">
-                    <label className=" flex justify-center gap-4 py-4 text-lg">
-                        Enter Password:
-                        <input type="password" value={password} onChange={handlePasswordChange} className="text-black text-sm" />
-                    </label>
-                    <button onClick={handleCheckPassword} className="mx-auto my-4 text-black px-4 py-2 bg-green-400 rounded-lg">Submit</button>
+                    <form onSubmit={handleCheckPassword}>
+                        <label className=" flex justify-center gap-4 py-4 text-lg">
+                            Enter Password:
+                            <input type="password" value={password} onChange={handlePasswordChange} className="text-black text-sm" />
+                        </label>
+                        <input type="submit" value={`submit`} className="mx-auto my-4 text-black px-4 py-2 bg-green-400 rounded-lg" />
+                    </form>
                 </div >
                 :
                 <>
@@ -154,7 +198,7 @@ const Auction = () => {
                                 <div className="flex gap-2 flex-wrap">
                                     <div className="w-[40%]">
                                         {/* <img src={imgsrc} alt="image" className="w-[75%] my-3 mx-auto" /> */}
-                                        <img src={virat} alt="image" className="my-3 mx-4 w-[90%] border-2 rounded-2xl" />
+                                        <img src={playersList[index].img} alt="image" className="my-3 mx-4 w-[90%] border-2 rounded-2xl" />
                                         <p className="my-6 mx-4 p-2 bg-[#1d1d1d] border-2 rounded-xl text-3xl text-center">{playersList[index].name}</p>
                                     </div>
                                     <div className={`w-[40%]`}>
@@ -173,20 +217,42 @@ const Auction = () => {
 
 
 
-                            <div className="w-[30%] bg-slate-200 text-black rounded-xl text-center pt-8">
+                            <div className="w-[32%] bg-slate-200 text-black rounded-xl text-center pt-8">
+                                <form onSubmit={playerSold}>
+                                    <div className="w-full text-center">
+                                        <label className="flex justify-center gap-4 py-4 text-lg">
+                                            Sell Price:
+                                            <input
+                                                type="number"
+                                                value={soldPrice}
+                                                placeholder="0 cr"
+                                                onChange={e => setSoldPrice(e.target.value)}
+                                                className="text-black border-2 border-black px-1 text-sm" />
+                                        </label>
+                                        <label className="flex justify-center gap-4 py-4 text-lg">
+                                            Sold To:
+                                            <input
+                                                type="text"
+                                                value={soldTo}
+                                                placeholder="team name"
+                                                onChange={e => setSoldTo(e.target.value)}
+                                                className="text-black border-2 border-black px-1 text-sm" />
+                                        </label>
+                                        {/* <button type="submit" onClick={handleCheckPassword} className="mx-auto my-4 text-black px-4 py-2 bg-green-400 rounded-lg">Submit</button> */}
+                                    </div >
 
-                                <div className="my-5 w-full text-center">
-                                    <button type="submit"
-                                        className="bg-green-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg"
-                                        onClick={playerSold}>
-                                        Sold
-                                    </button>
-                                    <button type="submit"
-                                        className="bg-red-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg"
-                                        onClick={playerUnSold}>
-                                        Unsold
-                                    </button>
-                                </div>
+                                    <div className="my-5 w-full text-center">
+                                        <button type="submit"
+                                            className="bg-green-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg">
+                                            Sold
+                                        </button>
+                                    </div>
+                                </form>
+                                <button
+                                    className="bg-red-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg"
+                                    onClick={playerUnSold}>
+                                    Unsold
+                                </button>
                             </div>
                         </div>
                     </div >

@@ -13,6 +13,10 @@ const Navbar = () => {
             link: '/'
         },
         {
+            name: 'Teams',
+            link: '/teams'
+        },
+        {
             name: 'Instructions',
             // link: '/'
             onClick: () => {
@@ -36,7 +40,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="pr-4 z-10  min-h-max">
-                    <ul className={`{hidden sm:flex ${show ? "flex flex-col " : "hidden"} justify-center gap-4}`}>
+                    <ul className={`{hidden sm:flex ${show ? "flex flex-col bg-black w-full" : "hidden"} justify-center gap-4}`}>
                         {navItems.map((item, i) => (
 
                             item.link ?

@@ -6,6 +6,7 @@ import AdminPanel from './pages/AdminPanel'
 import Auction from './pages/Auction'
 import SearchedPlayer from './components/SearchedPlayer'
 import Home from './pages/Home'
+import AllTeams from './pages/AllTeams'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' Component={Home} />
         <Route path="/:teamInitials" Component={TeamInfo} />
+        <Route path='/teams' Component={AllTeams} />
         <Route path='/user/admin' Component={AdminPanel} />
         <Route path='auction' Component={Auction} />
         <Route path='auction/:searchedplayer' Component={SearchedPlayer} />
