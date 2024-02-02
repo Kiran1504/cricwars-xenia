@@ -13,7 +13,7 @@ const TeamInfo = () => {
 
     useEffect(() => {
         ; (async function () {
-            const res = await fetch("http://localhost:5000/getdb", {
+            const res = await fetch("https://cricwarsbackend.onrender.com/getdb", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"

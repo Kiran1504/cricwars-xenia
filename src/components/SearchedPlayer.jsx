@@ -43,7 +43,7 @@ const SearchedPlayer = () => {
             alert("Sold price should be greater than base price")
             return;
         }
-        const res = await fetch("http://localhost:5000/updatedb", {
+        const res = await fetch("https://cricwarsbackend.onrender.com/updatedb", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
