@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import cricwars from "../assets/cricwars.jpg"
 
 const Navbar = () => {
     const [show, setShow] = useState(false);
@@ -35,7 +36,8 @@ const Navbar = () => {
                 <div className="flex items-center px-4">
 
                     <GiHamburgerMenu className='text-white text-2xl sm:hidden' onClick={() => setShow(!show)} />
-                    <div className='p-3'>
+                    <div className='p-3 flex gap-4 items-center'>
+                        <img src={cricwars} alt="logo" className="w-12 rounded-xl" />
                         <h1 className='text-center font-semibold text-2xl sm:text-3xl'>CRICWARS</h1>
                     </div>
                 </div>
@@ -70,7 +72,7 @@ const Navbar = () => {
 
 
             <div className={` w-[100%] ${showInstructions ? "inline" : "hidden"} absolute top-[12%] `}>
-                <div className="h-[40rem] overflow-y-scroll justify-center items-center w-[50%] mx-auto bg-[#eee] rounded-2xl px-10">
+                <div className="h-[40rem] overflow-y-scroll justify-center items-center w-[75%] sm:w-[50%] mx-auto bg-[#eee] rounded-2xl px-10">
 
                     <div className="modal_title mt-5 text-black">
                         <h1>Instructions</h1>

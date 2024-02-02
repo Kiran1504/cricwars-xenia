@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { teamslogo } from "../components/teamslogo";
 
 const TeamInfo = () => {
     const { teamInitials } = useParams();
@@ -10,6 +11,7 @@ const TeamInfo = () => {
     const [usedBudget, setUsedBudget] = useState(0);
     const [count, setCount] = useState(0);
     const [actualBudget, setActualBudget] = useState(0);
+    const [img, setImg] = useState()
 
     useEffect(() => {
         ; (async function () {
@@ -24,38 +26,50 @@ const TeamInfo = () => {
             if (data) {
                 if (teamInitials === "rcb") {
                     setPlayers(data.rcb)
+                    setImg(teamslogo.rcb)
                 }
                 if (teamInitials === "csk") {
                     setPlayers(data.csk)
+                    setImg(teamslogo.csk)
                 }
                 if (teamInitials === "mi") {
                     setPlayers(data.mi)
+                    setImg(teamslogo.mi)
                 }
                 if (teamInitials === "rr") {
                     setPlayers(data.rr)
+                    setImg(teamslogo.rr)
                 }
                 if (teamInitials === "lsg") {
                     setPlayers(data.lsg)
+                    setImg(teamslogo.lsg)
                 }
                 if (teamInitials === "gt") {
                     setPlayers(data.gt)
+                    setImg(teamslogo.gt)
                 }
                 if (teamInitials === "pbks") {
                     setPlayers(data.pbks)
+                    setImg(teamslogo.pbks)
                 }
                 if (teamInitials === "kkr") {
                     setPlayers(data.kkr)
+                    setImg(teamslogo.kkr)
                 }
                 if (teamInitials === "srh") {
                     setPlayers(data.srh)
+                    setImg(teamslogo.srh)
                 }
                 if (teamInitials === "dc") {
                     setPlayers(data.dc)
+                    setImg(teamslogo.dc)
                 }
 
             }
 
+
         })()
+
     }, [teamInitials]);
 
 
@@ -95,13 +109,14 @@ const TeamInfo = () => {
     }, [countdown]);
 
     useEffect(() => {
-        console.log(players);
+        // console.log(players);
         setActualBudget(90)
         players.map(player => {
-            console.log(Number(player.price));
+            // console.log(Number(player.price));
             setUsedBudget(preval => preval + Number(player.price))
         })
         setCount(players.length)
+        // console.log(img);
     }, [players])
 
     return iframeCode && (
@@ -125,7 +140,7 @@ const TeamInfo = () => {
                     <p className="text-xl">{actualBudget - usedBudget}</p>
                 </div>
                 <div className="w-[100%] sm:w-[25%] bg-[#eee] text-red-500 p-[1rem] rounded-2xl shadow-lg shadow-black">
-                    <h1 className="mb-2 text-lg font-semibold">No. of Players Buyed</h1>
+                    <h1 className="mb-2 text-lg font-semibold">No. of Players Bought</h1>
                     <p className="text-xl">{count}</p>
                 </div>
             </div>
@@ -134,10 +149,10 @@ const TeamInfo = () => {
 
             <div
                 className="border-b-2 sm:w-[50%] m-auto border-white p-2 my-3 sm:my-4 rounded-xl grid grid-cols-8 sm:grid-cols-10 gap-4 items-center">
-                {/* <img src={virat} alt="image" className="w-16 rounded-full col-start-1 col-span-2" /> */}
+                <img src={img} alt="image" className="w-16 rounded-full col-start-1 col-span-2" />
                 <h1 className="text-base sm:text-xl font-medium sm:font-semibold col-start-1 sm:col-start-3 col-span-4 sm:col-span-3">Player Name</h1>
-                <p className="col-start-6">rating</p>
-                <p className="col-start-8 col-span-3 text-sm">Price</p>
+                <p className="col-start-6 text-base sm:text-xl font-medium sm:font-semibold">Rating</p>
+                <p className="col-start-8 col-span-3 text-base sm:text-xl font-medium sm:font-semibold">Price</p>
             </div>
 
 
