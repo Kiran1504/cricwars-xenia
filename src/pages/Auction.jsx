@@ -21,6 +21,7 @@ const Auction = () => {
     const [loading, setLoading] = useState(false);
     const [isSetSelected, setIsSetSelected] = useState(false);
     const [setofP, setSetofP] = useState();
+    const [disableSold, setDisableSold] = useState(false);
 
     function calculateSizeInMB(jsonObject) {
         // Convert the JSON object to a string
@@ -79,6 +80,15 @@ const Auction = () => {
 
     const playerSold = async (e) => {
         e.preventDefault();
+        if (!disableSold) {
+            return
+        }
+        else {
+            setDisableSold(true);
+            setTimeout(() => {
+                setDisableSold(false);
+            }, 10000);
+        }
         if (index === playersList.length - 1) {
             alert("All players are sold");
             return;
@@ -243,7 +253,7 @@ const Auction = () => {
 
                                     <div className="my-5 w-full text-center">
                                         <button type="submit"
-                                            className="bg-green-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg">
+                                            className={`${disableSold ? "bg-gray-500" : "bg-green-500"} text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg`}>
                                             Sold
                                         </button>
                                     </div>
