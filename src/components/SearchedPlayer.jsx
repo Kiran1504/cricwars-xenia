@@ -123,7 +123,7 @@ const SearchedPlayer = () => {
                     <div className="w-[65%]">
                         <div className="flex gap-2 flex-wrap">
                             <div className="w-[40%]">
-                                <img src={playersList[5].img} alt="image" className="my-3 mx-4 w-[90%] h-[50vh] object-contain border-2 rounded-2xl" />
+                                <img src={player[0].img} alt="image" className="my-3 mx-4 w-[90%] h-[50vh] object-contain border-2 rounded-2xl" />
                                 <p className="my-6 mx-4 p-2 bg-[#1d1d1d] border-2 rounded-xl text-3xl text-center">{player[0].name}</p>
                             </div>
 
