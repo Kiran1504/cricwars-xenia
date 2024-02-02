@@ -171,13 +171,13 @@ const SearchedPlayer = () => {
                         <div className="my-5 w-full text-center">
                             <input type="submit" value={`Submit`}
                                 onClick={playerSold}
-                                className={`${disableSold ? "bg-gray-500" : "bg-green-500"} text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg`}>
+                                className={`${disableSold ? "bg-gray-500" : "bg-green-500"} text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg`} />
 
-                                <button
-                                    className="bg-red-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg"
-                                    onClick={playerUnSold}>
-                                    Unsold
-                                </button>
+                            <button
+                                className="bg-red-500 text-black p-2 px-5 rounded-xl m-4 my-2 mx-auto font-medium text-lg"
+                                onClick={playerUnSold}>
+                                Unsold
+                            </button>
                         </div>
                         {/* </form> */}
                     </div>
