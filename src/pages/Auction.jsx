@@ -197,8 +197,7 @@ const Auction = () => {
                             <div className="w-[65%]">
                                 <div className="flex gap-2 flex-wrap">
                                     <div className="w-[40%]">
-                                        {/* <img src={imgsrc} alt="image" className="w-[75%] my-3 mx-auto" /> */}
-                                        <img src={playersList[index].img} alt="image" className="my-3 mx-4 w-[90%] h-[50vh] object-cover border-2 rounded-2xl" />
+                                        <img src={playersList[index].img} alt="image" className="my-3 mx-4 w-[90%] h-[50vh] object-contain border-2 rounded-2xl" />
                                         <p className="my-6 mx-4 p-2 bg-[#1d1d1d] border-2 rounded-xl text-3xl text-center">{playersList[index].name}</p>
                                     </div>
                                     <div className={`w-[40%]`}>

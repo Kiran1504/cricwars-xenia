@@ -10,7 +10,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/1-PI_OWrsafEzneVO0wGBZGUd2fubrSbL",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 2,
@@ -20,7 +20,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1w9MITvVR43qTK9XXm-H1GK7JP-Vg9d1u",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 3,
@@ -30,7 +30,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1U3TlPOlSr6R5qS-otdy67_t9_1C63JSw",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 4,
@@ -40,7 +40,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "PBKS",
             "img": "https://lh3.google.com/u/0/d/1Rycn-ZPs2FXXHwAKt2L1nJmTMyS-fk1T",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 5,
@@ -50,7 +50,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1UmOa0RDv6uwKNpcXS1sWwYQ8ikDoSbov",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 6,
@@ -60,7 +60,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1SJLeHtzGpW_hrZUuY2KzOg17xPaoPBID",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 7,
@@ -70,7 +70,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1qDzyI6C8aeETV0ZjRVeTMzIxUY7Wf4ek",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 8,
@@ -80,7 +80,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/16TB-EdVkdxIloSPf8iH-MhzaP-yIjBOE",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 9,
@@ -90,7 +90,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1ho64cME3sB9dKOEVKwYGsz1_FkF_HNV0",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 10,
@@ -100,7 +100,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1ovh1Dok3nG8VJKgCUJ0b3jAELIR7Ot8n",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 11,
@@ -110,7 +110,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/1m0dlOwNcpcqSD-Ye1dorHCgcCvi-HrKA",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 12,
@@ -120,7 +120,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1gX8ncrGwC1K_Jdo-FBsvvdUNU-gMZcf6",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 13,
@@ -130,7 +130,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1KdiI4CzX-IlQPHVT3zzQPovOhvJ6FAfU",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 14,
@@ -140,7 +140,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1wDWf4y64JOj2rmL5wjCoKuy-QeZybw2W",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 15,
@@ -150,7 +150,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1CpbnE_h0lytKTf48mZaohqUQvxL37byP",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 16,
@@ -160,7 +160,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1GtEucxofGvfwdOfeRmooRRj9DrYVSOV1",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 17,
@@ -170,7 +170,7 @@ const initialState = {
             "role": "All Riunder",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/1MjjYKnreEnJGI0ilIcM99eZd6kQEuC4E",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 18,
@@ -180,7 +180,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1gWARm9D8Q693Fm5x6yfq7VlTDAWBjUBg",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 19,
@@ -190,7 +190,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/19lx_t6Yr1jIvH7QU3dfPOekY3Vum9zKp",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 20,
@@ -200,7 +200,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/16yaXchPCrOmpXIGK17quJzbKPFWtnh4t",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 21,
@@ -210,7 +210,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1lKlqdPblcGPe7CCF9uWsLzCXCQJw8CtT",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 22,
@@ -220,7 +220,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1LEN-JzavzfsHUv9IO6jdrmkelfOuFoT3",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 23,
@@ -230,7 +230,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1Ye5uo28JQK0nNcPj64oujD9CyfKgGIzE",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 24,
@@ -240,7 +240,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/1tpSyyoOAGIuVelQ8k180JKAAD1hsMUcP",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 25,
@@ -250,7 +250,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "PBKS",
             "img": "https://lh3.google.com/u/0/d/1klDdu0AU0psaOEGfdZvsNSLdYlVhA5QX",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 26,
@@ -260,7 +260,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "PBKS",
             "img": "https://lh3.google.com/u/0/d/1w7-96dlelF_pCJO8CmuRoIVjO4jm6RxV",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 27,
@@ -270,7 +270,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/1ufyGw__bznZ50pwRQb-fqD0h4H_7iPub",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 28,
@@ -280,7 +280,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1jMaNyUHsyYViQTelDg9y3G7GQ0xwASPG",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 29,
@@ -290,7 +290,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/19I7fXNm4AEfQ8Wh8L-iXDSVa0Wh2ZNzw",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 30,
@@ -300,7 +300,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1te2lgKHNov47fXAp6UYJiLHwW0rFjSHx",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 31,
@@ -310,7 +310,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/1C2Hey_53euCNfWqNchUspgSZQvNfh41A",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 32,
@@ -320,7 +320,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1biAqG2URZB50Zk5vCxKY7P8oEaDbGn8I",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 33,
@@ -330,7 +330,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1m3kE3UQiLLZrSkKrPuTtUXaK8kzEtGim",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 34,
@@ -340,7 +340,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1XtBkBB50u2yn0_DSgn1BS1OgGDO3o3sr",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 35,
@@ -350,7 +350,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1FRkEuwMrwR5EWNteoGUV2oPh0S-XvqdV",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 36,
@@ -360,7 +360,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/1jZf0JnvQH9PrgDq4faMf6lR1yd29kk5t",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 37,
@@ -370,7 +370,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "PBKS",
             "img": "https://lh3.google.com/u/0/d/1K3RzYTh_gMripC-msDRg8Peumz5JS237",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 38,
@@ -380,7 +380,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/113_WVi9vf7d1s1jBw_6LsHWiLEka8d1_",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 39,
@@ -390,7 +390,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1jBzAtZk89MD8LuPDk-NVBnbrte22KaoN",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 40,
@@ -400,7 +400,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/17AxmszIhi52Eu28eBm_UG7_DJDeTqjF9",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 41,
@@ -410,7 +410,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1ZjTzVnTc2Po9l1bpLdLVZRYYXbC4rxop",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 42,
@@ -420,7 +420,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1Vfdmr1jIoUS4tJXcGrHWtzpE9t-8Ohxp",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 43,
@@ -430,7 +430,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1Xn1RN6NYkI-IpX73c28l-XExWcoweXZz",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 44,
@@ -440,7 +440,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1KvDS1_2ypO_J00Jud0wrhy_D1qwWxKOQ",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 45,
@@ -450,7 +450,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1BuBqOFKhENRPKH1WAus4hNdJemURPBBt",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 46,
@@ -460,7 +460,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/1wTOBeOND_Cx5-PqbvL0G5xz0VkoxGdmL",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 47,
@@ -470,7 +470,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/1Tj5zy4HyNB8kzQe1ItJX5NJCKCsU9RT8",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 48,
@@ -480,7 +480,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1x-tCbcK9Y2BGT4kv6hwh9gqc4swvwz6W",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 49,
@@ -490,7 +490,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/1n38OYd9SnL0Ldr575gpC-fwTC8Xsc5bE",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 50,
@@ -500,7 +500,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1YMkj3OrUP8fhQ8h_LjTO3S6iyL_WJKQQ",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 51,
@@ -510,7 +510,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1ADWG4Fz_P1RLEb8PbKvIAMECyFUtUrPo",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 52,
@@ -520,7 +520,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/17z2Ycjx6650sc3t3L2O9QL-GegEBGctH",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 53,
@@ -530,7 +530,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/1j1lCXzhMIjzgrm75iDNt9Cqehx83pR2s",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 54,
@@ -540,7 +540,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/1AK0jhO97rspHt3rE_3VvIGOMSgMxQHze",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 55,
@@ -550,7 +550,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1aeW3LceP4x8ZhFdS6GV5oLLvXURNFOT6",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 56,
@@ -560,7 +560,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1vQvOWoc5ysxIBYG6JKkgZjD0wvQ_fNuI",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 57,
@@ -570,7 +570,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1g8ggIWcz4QPoxmU90TKRhmJ7c4ikzBAo",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 58,
@@ -580,7 +580,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1VyezNiWlqXz29v89cXtYLRXTtK3NsCbt",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 59,
@@ -590,7 +590,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/15TlBISjbnW1AKgnQnHCFPryOHvyODhc5",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 60,
@@ -600,7 +600,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1-1YXsejegVq9irZKZrMrSOVBLqm5wqX8",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 61,
@@ -610,7 +610,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1ppRsLINuevS-uHywqSXRyHQM9_pNUR2j",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 62,
@@ -620,7 +620,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/16hdxS6ZG8dFAll9QNPMbIov7lJYL7pVU",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 63,
@@ -630,7 +630,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1NdsQp0Rq1c71HDptBkf0gwsZtfTKof7v",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 64,
@@ -640,7 +640,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1kY6T7kt9PjYtFqS45OmjZKNWFwY70a1F",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 65,
@@ -650,7 +650,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1ExQXBKw_ph4USZ_VZtvSFQWMzQyhlZar",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 66,
@@ -660,7 +660,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1F_SDuvAjGoWKmIlGXGuiRxwto1TwlJys",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 67,
@@ -670,7 +670,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/1KDtDR0DIRsFoLnLiYNOGvelWxESWodqV",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 68,
@@ -680,7 +680,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1lHJyVMun4pSH36yVc86BT_xSA2nAEcPI",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 69,
@@ -690,7 +690,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1Fjj4LveWMol37-FJGqHCw0HuIf9ZEVic",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 70,
@@ -700,7 +700,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1Q5FvSox6TjgRLMi_wfIgONQ1TsEJMSpk",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 71,
@@ -710,7 +710,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1mwIAXQmauJRLp465u_O3suWOnI2asv5l",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 72,
@@ -720,7 +720,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/16dE9A9ar_S5NgdzbrlPwfAeLSwa5BIPW",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 73,
@@ -730,7 +730,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1aY6Y058essPCXnjLDHTfATmtq51_kp2g",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 74,
@@ -740,7 +740,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1o9u0z-wyOMmmhMjPQG8RFuy1CEqRmwp3",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 75,
@@ -750,7 +750,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1UeUAsR1ZbBibEVXwoviso5ANREsssfKl",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 76,
@@ -760,7 +760,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1Zyi0gZ4JTBZaI-4JyaLfdnK25TkilhMp",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 77,
@@ -770,7 +770,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/1Sf4YluXX9VybMjN8peEWzHC2r8xNtbuz",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 78,
@@ -780,7 +780,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/14Xa-ANxMBUFx1_l3MVqZWrvfX6h_Tsp-",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 79,
@@ -790,7 +790,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1lrs0mPoO4fNgA2F3-BRf3eFMvJX7cjdA",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 80,
@@ -800,7 +800,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1IwWZ-vDzhs5OKyBm-Jg9-CwmR0tVmnzJ",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 81,
@@ -810,7 +810,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1TZMQuYL8E0Qr_oJWklmiDWKY5MO7JZhE",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 82,
@@ -820,7 +820,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1HgpOsoLosYVOByeHhxUYC7TQpkKgbEgW",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 83,
@@ -830,7 +830,7 @@ const initialState = {
             "role": "Batsman",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/11q1uiKfcmtnwJ95vsZjSRrTE15kqMQBd",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 84,
@@ -840,7 +840,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1oloy-tKmjuPqSXRQ4OLmGoxC4b1jaWWg",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 85,
@@ -850,7 +850,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/1kGCKKnh7i2AbJKc0lCJgeD5tTMPGCtbQ",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 86,
@@ -860,7 +860,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/1vlkkut71gk_a7fpPc_r7WbF6tW7m2gh4",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 87,
@@ -870,7 +870,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1P7A3JGFL806spQOKWdahXVVSBwvue05y",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 88,
@@ -880,7 +880,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1SAcQ3IQjuYCmn7Gy-02y8vUK2i0NoDGf",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 89,
@@ -890,7 +890,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/1w9ex-6C8kFUY4eg5FWLYrOLJAwVje-FQ",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 90,
@@ -900,7 +900,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1ZOz6KB9iL8W7VLvhCmQ8Fd6fJl8jYf0A",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 91,
@@ -910,7 +910,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1mrGZzqwXGejzv6JP6W6Q6AscoCFmLaUf",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 92,
@@ -920,7 +920,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/1vul1Mc30S7-pzXjonxr5ZdIBOiYUjFr9",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 93,
@@ -930,7 +930,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "PBKS",
             "img": "https://lh3.google.com/u/0/d/1h5PXawZB8RUPmqiDCTtF63jf3hSIDNDU",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 94,
@@ -940,7 +940,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/1UW6X4B9BJ_Z5u_H7Kp9njdCN46hu-F9T",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 95,
@@ -950,7 +950,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1z3qxscQsvurmUG2sYAYRB-yqLiyuz8gv",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 96,
@@ -960,7 +960,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/1PJ0863K09J7skA-lyjGGKykjfQao-KOU",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 97,
@@ -970,7 +970,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1-HuPl_GIgvJHmT-7wuLuQjO8-F9Xwmfi",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 98,
@@ -980,7 +980,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/15SsrkTq0ZMFA1IVgocDGUXW_SoqAOcud",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 99,
@@ -990,7 +990,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "PBKS",
             "img": "https://lh3.google.com/u/0/d/1z0fVdkzarHkViofVqlEfC75-jwwsxEs3",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 100,
@@ -1000,7 +1000,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1-xlFThIGJZGj4D3WZj_bn9yc7Ev5OsqT",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 101,
@@ -1010,7 +1010,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/1x2Mb6hoWgyom31u7JrryLbgnhFgCiEqa",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 102,
@@ -1020,7 +1020,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "PBKS",
             "img": "https://lh3.google.com/u/0/d/1sz3ThNNz7XHmOTizah3LO00vuc5yvlnn",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 103,
@@ -1030,7 +1030,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/1fUstzEdmGkt__ImDqbjWGckQA8W7cvI-",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 104,
@@ -1040,7 +1040,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1zDKY63DlGdJwmrUq7HAJRHJ2we2Q5AtA",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 105,
@@ -1050,7 +1050,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/19WqzMVFXln41lIjt0OzbxFcqHRMWIHp3",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 106,
@@ -1060,7 +1060,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1taSjfasSRKBIqHrsi8GCetptRJgtvGcO",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 107,
@@ -1070,7 +1070,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1PcQwFys5eCjjwWtWtke5Xyxj47763BBc",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 108,
@@ -1080,7 +1080,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1WiHMZ27qqdoyfy8I1_I5t82qelqT0qdr",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 109,
@@ -1090,7 +1090,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "PBKS",
             "img": "https://lh3.google.com/u/0/d/1CmvaD1MRxKlif3r5nREC7K-ndYkXF24W",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 110,
@@ -1100,7 +1100,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/1o30kwvogP2suUq6mm7IFoH9nmt2OMSyT",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 111,
@@ -1110,7 +1110,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1csHs9L-TviSwrWqBOHt_2qvadj4FbP0n",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 112,
@@ -1120,7 +1120,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1ppMYDMVhoaLuJ3_gBfULw8K484pMgoTj",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 113,
@@ -1130,7 +1130,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/1sMr8KpCPXhHs8fPmr6A-ZoM2Zp0Kg3A8",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 114,
@@ -1140,7 +1140,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/1SAjogUkVwvVi4OIY_v1-sVafTGDacgE5",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 115,
@@ -1150,7 +1150,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1xKXmBJ_7LiEp230araoIB5zH9EgyYqZ4",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 116,
@@ -1160,7 +1160,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1I1X-ZfeHLiqC9-b2OSh7nAOnoUWs6iEK",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 117,
@@ -1170,7 +1170,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1tqiH2MtqP8N73QTHdYy64NaWKnjBcybi",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 118,
@@ -1180,7 +1180,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1ZDeve5I0ZnrWm6ccrL4cfJKfXclWPmoi",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 119,
@@ -1190,7 +1190,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1hNKzm6dAJVMn2jBst0HQw32cojSCWf16",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 120,
@@ -1200,7 +1200,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/1yTWHtxRX1kpxivGfve-ka41jHxRUKQkD",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 121,
@@ -1210,7 +1210,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "PBKS",
             "img": "https://lh3.google.com/u/0/d/1GPT5HQw5L0nbLgI8ThqMoQyuVrgHUm-y",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 122,
@@ -1220,7 +1220,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/1LC_RCnucL6AULbf9A7hNBAOok1zE_Scx",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 123,
@@ -1230,7 +1230,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1767yIwissKiHGwmNVKW_pggwcOr9MRzT",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 124,
@@ -1240,7 +1240,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1CsDbfvyx3BXee7axqKtEbWLaxfHAzaiu",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 125,
@@ -1250,7 +1250,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1coMmP_rFrK1XHw-MW-ifbEZb96saBHnl",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 126,
@@ -1260,7 +1260,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/19AlDNasdyLlFqSImM_GiCfU_4HDIl8WV",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 127,
@@ -1270,7 +1270,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1MqCCAWYB8BFp1g3AXPpSFuU-nMFVXbz6",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 128,
@@ -1280,7 +1280,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1nTv-XeESfPKpfF-OQS0sXWu1HHFH12UX",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 129,
@@ -1290,7 +1290,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1ZzcTdEU5LHirE3c2E6ockyHi3eOkx1CL",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 130,
@@ -1300,7 +1300,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1gIC3LeGtRSE2u6n4TL3s6SBwQsN355Zg",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 131,
@@ -1310,7 +1310,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1Pffni3qaLykmBDZC34bSiTNSP8YvnUM0",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 132,
@@ -1320,7 +1320,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "PBKS",
             "img": "https://lh3.google.com/u/0/d/1th5bwZMszbYPn5Q4FOp5TMBcPYTDv7wt",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 133,
@@ -1330,7 +1330,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1NexsUK-yq18W05evQrxLVVLCfImy7yrF",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 134,
@@ -1340,7 +1340,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1m9wUXH_339qI0XXgmfvKwUULc41H8Der",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 135,
@@ -1350,7 +1350,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/1lc4gMjCYHrhHQpuQFhEQFgKZR-3go80L",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 136,
@@ -1360,7 +1360,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1OYcjsXsTjGok7wsjY_O8Y5sTTGZCZhvx",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 137,
@@ -1370,7 +1370,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1ARuyF9nMq1vNzs24PktRqqaqkA5aIHFF",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 138,
@@ -1380,7 +1380,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1bjxC8odX-rKvwd9SgQhjLTzRhI0epdhe",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 139,
@@ -1390,7 +1390,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "PBKS",
             "img": "https://lh3.google.com/u/0/d/1-SzqvDyzjjeujwRb65QZGkmccITv1jjX",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 140,
@@ -1400,7 +1400,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/1N_7S2HmENUW-EvL-KgZFa8dfUY60jtsk",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 141,
@@ -1410,7 +1410,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1il61AVESdKAIlXlc5PnwW_BX-77YvIyF",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 142,
@@ -1420,7 +1420,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1MjL0WCn1nALCt5eoDiTfDu_IEUTWbjhD",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 143,
@@ -1430,7 +1430,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1k2ChpMIo9jhjR9OwnDeg7taBZtzBHtBp",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 144,
@@ -1440,7 +1440,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/11pTbl9R3DQnD5BizUxn5yIsBvfELqoKx",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 145,
@@ -1450,7 +1450,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1GPwCnw-RHdUd5IpC0Z1j83eU0XU3KAP5",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 146,
@@ -1460,7 +1460,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/1P2YmdHdFzVAt53wKQwSgAfmuS3rLVSw7",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 147,
@@ -1470,7 +1470,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/126oXqN3TYeTV8VetKKBAjkTO0NZ5EKic",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 148,
@@ -1480,7 +1480,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/1GWX_ki2ZkeDGTRZsyThnsJrlY2VVhMok",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 149,
@@ -1490,7 +1490,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "RR",
             "img": "https://lh3.google.com/u/0/d/1Q67eOgZy0rv2aw5ISQgl3_8v5iro_hU0",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 150,
@@ -1500,7 +1500,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1ybtOA3MBYZfPh-Lk3AzNCT6DQTbIOjIp",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 151,
@@ -1510,7 +1510,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1y74ts2E2A9wwod71vTaoioHDCI_3mr-H",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 152,
@@ -1520,7 +1520,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1YigSxgKPnw3_tySxI59TEyjtUdQVED1k",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 153,
@@ -1530,7 +1530,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1zV16wPw4dGcTU1P2x535u67MYKE2OHJe",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 154,
@@ -1540,7 +1540,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1gm5N5c0yquAt1dBwQsIMwPcICzSER5Vl",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 155,
@@ -1550,7 +1550,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/1VuidMl_jFAZqw6DxUWYBM4ErRQxUOHmS",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 156,
@@ -1560,7 +1560,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/1tmGqbH2zeXM0NqcaUkM-QALDZLMW5yP9",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 157,
@@ -1570,7 +1570,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/11wgHqkm_JePQS9TIMG2FNbh9xfv7AOnT",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 158,
@@ -1580,7 +1580,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "RCB",
             "img": "https://lh3.google.com/u/0/d/1UIp24XmLIixP0zoiOwfRRh6BRdGFoKw8",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 159,
@@ -1590,7 +1590,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "DC",
             "img": "https://lh3.google.com/u/0/d/1WkNXZNJke2cqEx3ndL3Y4T8ce7wfHvYe",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 160,
@@ -1600,7 +1600,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1yEJ03ZtR-JbT6_YvnF6ZObjSyCZzWZQI",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 161,
@@ -1610,7 +1610,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/1TVOiqXLpU_b4xQiur7yxUy100K-igBgq",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 162,
@@ -1620,7 +1620,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/12pkZ1U6aMnPbLtIiX_NUQLujCUbJtCo0",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 163,
@@ -1630,7 +1630,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/1B2ZnwjRmGVGjrp8mULMJaISrtX83IxPE",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 164,
@@ -1640,7 +1640,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "PBKS",
             "img": "https://lh3.google.com/u/0/d/1NFr3WXAS5W-0gqyx4oQ3TE9ADdy8XElm",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 165,
@@ -1650,7 +1650,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1ZdFAHCOY7IPHt_-gAQ0wi3bMJlVJaned",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 166,
@@ -1660,7 +1660,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/171nbxU5A0_yfKF07tLSKiRPtES99BoTQ",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 167,
@@ -1670,7 +1670,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "LSG",
             "img": "https://lh3.google.com/u/0/d/1gF01EVQY-QxroxTt7dv79Ys_R_wxOENn",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 168,
@@ -1680,7 +1680,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1RKFTMIIbwCHU-k47IiNHnvChkXGf_x9d",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 169,
@@ -1690,7 +1690,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "CSK",
             "img": "https://lh3.google.com/u/0/d/1BdrMnaHx8UL6WRegiEDy9B69SLjrDafE",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 170,
@@ -1700,7 +1700,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/1pFO4TjQan2Bagsi9_hXs5v9-t1994Q4T",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 171,
@@ -1710,7 +1710,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1C_6bUHCwEXSNYbOhm2Ooup7ogkWFSWu_",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 172,
@@ -1720,7 +1720,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "GT",
             "img": "https://lh3.google.com/u/0/d/1giJRHythgEvwgTsXTy0Niz_fmfnPK-BD",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 173,
@@ -1730,7 +1730,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "KKR",
             "img": "https://lh3.google.com/u/0/d/1L5bxvDR-8tH-1l-O4WGCT_sWEt0p9Dp7",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 174,
@@ -1740,7 +1740,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/1gK30MeBxTmTReqm0bCfZXlZUbM-dLLJX",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 175,
@@ -1750,7 +1750,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "MI",
             "img": "https://lh3.google.com/u/0/d/18k25bNuBbNJMoOAqM38IraEB75En3p9b",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 176,
@@ -1760,7 +1760,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1cR2qPyZ0EarrSRhVdeJnccJ4KoKmStrs",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 177,
@@ -1770,7 +1770,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "SRH",
             "img": "https://lh3.google.com/u/0/d/1WUTfo07a61G0U8b-GYTvj8OwhJYsTbBf",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 178,
@@ -1780,7 +1780,7 @@ const initialState = {
             "role": "Wicket Keeper",
             "previousTeam": "NaN",
             "img": "https://lh3.google.com/u/0/d/1Rme59GYyrFJhvemauSk3ORJ9STgtynRJ",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 179,
@@ -1790,7 +1790,7 @@ const initialState = {
             "role": "Batman",
             "previousTeam": "NaN",
             "img": "https://lh3.google.com/u/0/d/1D1o4rF7PTUxnsPuUcUzf52V0FZUrP268",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 180,
@@ -1800,7 +1800,7 @@ const initialState = {
             "role": "All Rounder",
             "previousTeam": "NaN",
             "img": "https://lh3.google.com/u/0/d/1Qh900iyWllN1qnNwWmtINo3HA0jEikYV",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 181,
@@ -1810,7 +1810,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "NaN",
             "img": "https://lh3.google.com/u/0/d/1Z46BzylTSrqB6ZoAdGzqt-PqG6C10tdg",
-            "status": "unsold"
+            "status": "unauctioned"
         },
         {
             "id": 182,
@@ -1820,7 +1820,7 @@ const initialState = {
             "role": "Bowler",
             "previousTeam": "NaN",
             "img": "https://lh3.google.com/u/0/d/1EFRvvKLtKCdQP86X7DECWjinFrarrEeC",
-            "status": "unsold"
+            "status": "unauctioned"
         }
     ]
 }
@@ -1834,11 +1834,11 @@ const auctionSlice = createSlice({
         setSold: (state, action) => {
             state.players[action.payload.index].status = "sold"
         },
-        setUnSold: (state, action) => {
-            state.players[action.payload.index].status = "unsold"
+        setunauctioned: (state, action) => {
+            state.players[action.payload.index].status = "unauctioned"
         },
     }
 })
 
-export const { setSold, setUnSold } = auctionSlice.actions
+export const { setSold, setunauctioned } = auctionSlice.actions
 export default auctionSlice.reducer
