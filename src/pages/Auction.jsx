@@ -173,7 +173,7 @@ const Auction = () => {
     const handleCheckPassword = (event) => {
         event.preventDefault();
         // Replace 'yourCorrectPassword' with your actual correct password
-        const correctPassword = 'Ayushisadminofcricwarswebsite2024';
+        const correctPassword = 'Aayushisadmin';
 
         if (password === correctPassword) {
             setIsPasswordCorrect(true);
