@@ -70,7 +70,7 @@ const SearchedPlayer = () => {
         const data = await res.json();
         // console.log(data);
         if (!data.message) {
-            alert("Wrong input")
+            alert(data.error)
             return;
         }
         // Update local storage and state with the updated players list
