@@ -1,12 +1,7 @@
 /* eslint-disable no-unused-vars */
-import Card from "../components/Card";
-// import { players } from "../utils/players";
-import virat from "../assets/virat.png"
+
 import { useSelector, useDispatch } from "react-redux";
-import { login } from "../reducers/authSlice";
-import { Form, InputGroup } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import { setSold, setUnSold } from "../reducers/auctionSlice";
 import PlayerSearch from "../components/PlayerSearch";
 
 const Auction = () => {
