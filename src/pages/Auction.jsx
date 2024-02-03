@@ -116,7 +116,7 @@ const Auction = () => {
         const data = await res.json();
         // console.log(data);
         if (!data.message) {
-            alert("Wrong input")
+            alert(data.error)
             return;
         }
         const updatedPlayers = playersList.map((player) =>
