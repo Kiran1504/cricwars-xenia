@@ -129,7 +129,7 @@ const TeamInfo = () => {
 
                 <div className="w-[100%] sm:w-[25%] bg-[#eee] text-green-700  p-[1rem] rounded-2xl shadow-lg shadow-black">
                     <h1 className="mb-2 text-lg font-semibold">Remaining Budget</h1>
-                    <p className="text-xl">{Math.round(actualBudget - usedBudget)}</p>
+                    <p className="text-xl">{parseFloat(actualBudget - usedBudget).toFixed(2)}</p>
                 </div>
                 <div className="w-[100%] sm:w-[25%] bg-[#eee] text-red-500 p-[1rem] rounded-2xl shadow-lg shadow-black">
                     <h1 className="mb-2 text-lg font-semibold">No. of Players Bought</h1>
