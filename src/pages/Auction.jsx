@@ -42,7 +42,9 @@ const Auction = () => {
     const [password, setPassword] = useState('');
     const [isPasswordCorrect, setIsPasswordCorrect] = useState(true);
 
-
+    useEffect(() => {
+        updateLocalStorage(players);
+    },[]);
 
     useEffect(() => {
         const storedPlayers = JSON.parse(localStorage.getItem('players'));
