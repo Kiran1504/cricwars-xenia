@@ -18,6 +18,10 @@ const Navbar = () => {
             link: '/teams'
         },
         {
+            name: 'Auction',
+            link: '/auction'
+        },
+        {
             name: 'Instructions',
             // link: '/'
             onClick: () => {
