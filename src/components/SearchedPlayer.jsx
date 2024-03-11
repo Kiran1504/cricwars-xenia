@@ -14,7 +14,7 @@ const SearchedPlayer = () => {
     const [player, setPlayer] = useState();
 
     const [playersList, setPlayersList] = useState();
-    const [isAdmin, setIsAdmin] = useState(false);
+    const [isAdmin, setIsAdmin] = useState(true);
 
     const [disableSold, setDisableSold] = useState(false);
 
