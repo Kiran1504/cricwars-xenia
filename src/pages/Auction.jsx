@@ -40,7 +40,7 @@ const Auction = () => {
     const [unsoldPlayers, setUnsoldPlayers] = useState([]);
 
     const [password, setPassword] = useState('');
-    const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
+    const [isPasswordCorrect, setIsPasswordCorrect] = useState(true);
 
 
 
